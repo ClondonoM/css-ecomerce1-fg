@@ -1,17 +1,44 @@
 html {
   box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10 px */
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-img {
-  max-width: 100%;
-}
 
 body {
   font-family: Monstserrat, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* Globals */
+
+h1,
+h2,
+h3 {
+  font-family: roboto, sans-serif;
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 a {
@@ -19,17 +46,10 @@ a {
   color: #000000;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.container-nav {
-  border-top: 2px solid #d4d0d0;
-}
+/* Header */
 
 .site-name {
-  margin: 40px 0;
+  margin-top: 5rem;
   text-align: center;
 }
 
@@ -37,23 +57,67 @@ a {
   color: #3c6de7;
 }
 
+/* Nav pages */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.container-nav {
+  border-top: 0.2rem solid #d4d0d0;
+}
+
 .nav-pags {
-  padding: 10px 20px;
+  padding: 1rem;
   display: flex;
   justify-content: space-around;
+}
+
+.nav-pags a {
+  font-weight: bold;
 }
 
 .hero {
   background-image: url(../img/principal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
+  background-position: center center;
+  height: 40rem;
+}
+
+/* Categories */
+
+.categories {
+  padding-top: 5rem;
+}
+
+.categories h2 {
+  text-align: center;
 }
 
 .category-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
-  height: 300px;
-  gap: 15px;
+  height: 30rem;
+  gap: 1.5rem;
 }
+
+.category a {
+  display: block;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+
+.category a:hover {
+  background-color: #3c6de7;
+  color: white;
+  border-bottom-right-radius: 1rem;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+}
+
+/* About us  */
