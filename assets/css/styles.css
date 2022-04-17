@@ -46,6 +46,27 @@ a {
   color: #000000;
 }
 
+.btn {
+  display: block;
+  background-color: #0fdb27;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1rem;
+  transition: background-color 0.3s ease-out;
+}
+
+.btn:hover {
+  background-color: #08b132;
+}
+
+/* Utilities */
+
+.text-center {
+  text-align: center;
+}
+
 /* Header */
 
 .site-name {
@@ -90,10 +111,6 @@ a {
 
 .categories {
   padding-top: 5rem;
-}
-
-.categories h2 {
-  text-align: center;
 }
 
 .category-list {
@@ -142,4 +159,95 @@ a {
   flex-basis: 50%;
   padding: 0 3rem;
   color: white;
+}
+
+/* Our Products section */
+
+.main-content {
+  padding-top: 5rem;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+
+.product:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.product:nth-child(1) img {
+  height: 43rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.product:nth-child(2) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product:nth-child(3) {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+.product:nth-child(3) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.product:nth-child(5) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.product:nth-child(6) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.product {
+  background-color: #3c6de7;
+}
+
+.price,
+.product-text {
+  text-align: center;
+  color: white;
+}
+
+.product-text {
+  padding: 2rem;
+}
+.product-text h3 {
+  margin: 0;
+}
+
+.product-text p {
+  margin: 0 0 0.5rem 0;
+}
+
+.product-text a:hover {
+}
+
+.price {
+  font-size: 2.8rem;
+  font-weight: 700;
 }
